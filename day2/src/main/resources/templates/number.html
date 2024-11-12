@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Number Result</title>
+</head>
+<body>
+    <h2 th:if="${removeName gt 0}">Hello, <span data-th-text="${name}">Name</span></h2>
+
+    <h2 th:if="${removeRange gt 0}">This is your <span data-th-text="${range}">Range</span> lucky numbers</h2>
+
+    <table>
+        <tr data-th-each="image : ${images}">
+            <td><img data-th-src="${image.file}" alt="Image"width="200" 
+                height="250"></td>
+        </tr>
+    </table>
+    <div>
+        <a href="/"> <h3>Back</h3> </a>
+     </div>
+</body>
+</html>
